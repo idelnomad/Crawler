@@ -36,9 +36,7 @@ fun main(args: Array<String>) {
             println("$id => $word")
 
             val item = parser.parse(word)
-            if (item != null) {
-                storage.update(id, item)
-            }
+            storage.update(id, item)
 
             if (debug) {
                 logger.put("$id => $word")
